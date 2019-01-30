@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="codegenerationext" name="Code Generation Extension" schema="schema/codegenerationext.exsd"/>
+  
+  <extension
+         id="createClass"
+         name="Create Class filter"
+         point="pt.iscte.pidesco.projectbrowser.filter">
+      <filter
+            class="codegenerationproj.CreateClassFilter">
+      </filter>
+   </extension>
+   
+   <extension
+         id="createClass"
+         name="Create class"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="codegenerationproj.CreateClassTool"
+            description="Creates a class"
+            hasState="true"
+            icon="class_obj.png"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+   
+  
+   <extension
+         id="createPackage"
+         name="Create Package filter"
+         point="pt.iscte.pidesco.projectbrowser.filter">
+      <filter
+            class="codegenerationproj.CreatePackageFilter">
+      </filter>
+   </extension>
+   
+   <extension
+         id="createPackage"
+         name="Create package"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="codegenerationproj.CreatePackageTool"
+            description="Creates a package"
+            hasState="true"
+            icon="package_obj.png"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+   
+   <extension
+         id="createInterface"
+         name="Create Interface filter"
+         point="pt.iscte.pidesco.projectbrowser.filter">
+      <filter
+            class="codegenerationproj.CreateInterfaceFilter">
+      </filter>
+   </extension>
+   
+   <extension
+         id="createInterface"
+         name="Create interface"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="codegenerationproj.CreateInterfaceTool"
+            description="Creates an interface"
+            hasState="true"
+            icon="int_obj.png"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+   
+   <extension
+         id="createEnum"
+         name="Create Enum filter"
+         point="pt.iscte.pidesco.projectbrowser.filter">
+      <filter
+            class="codegenerationproj.CreateEnumFilter">
+      </filter>
+   </extension>
+   
+   <extension
+         id="createEnum"
+         name="Create enum"
+         point="pt.iscte.pidesco.tool">
+      <tool
+            class="codegenerationproj.CreateEnumTool"
+            description="Creates an enum"
+            hasState="true"
+            icon="enum_obj.png"
+            view="pt.iscte.pidesco.projectbrowser.tree">
+      </tool>
+   </extension>
+   
+</plugin>
